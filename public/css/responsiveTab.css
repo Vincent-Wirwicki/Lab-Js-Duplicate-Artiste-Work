@@ -1,0 +1,51 @@
+@media screen and (max-width: 480px),
+(orientation:portrait) {
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        width: 100vw;
+        height: auto;
+        min-height: 100vh;
+        padding: 1rem;
+
+    }
+
+    .wrapp {
+
+        height: 28rem;
+        min-width: 80vw;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(30, 1fr);
+        grid-gap: 0.2rem;
+        margin: 0;
+        padding: 0.2rem;
+    }
+
+    .about {
+
+        /* height: 25rem; */
+        width: auto;
+        margin: 2rem 0;
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-decoration: none;
+        padding: 1rem;
+
+    }
+
+    .time {
+
+        font-size: 10px;
+        color: #F2F2F2;
+        text-align: center;
+        align-self: center;
+
+    }
+
+
+}
