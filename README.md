@@ -1,4 +1,4 @@
-# Lab-Js-Automation
+# Lab - Duplicate Artiste Work
 
 ## Small script inspired by [Roman Opalka](https://fr.wikipedia.org/wiki/Roman_Opa%C5%82ka) work.
 
