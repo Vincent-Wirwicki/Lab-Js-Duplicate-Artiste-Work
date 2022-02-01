@@ -1,55 +1,57 @@
-// const height = window.pageYOffset
-const resetTime = 400
-const intervalTimer = 10
-const wrapp = $('.wrap')
-let time = 0;
+const intervalTimer = 10;
+let isAutoScroll = true;
+let count = 0;
+const resetCount = 400;
 let displayTime = 0;
 let opacity = 0;
 let currentWrapper = 1;
-  
 
 const createWrapp = () => {
     
     $('<div></div>')
         .appendTo('.container')
-        .addClass('wrapp')
-    time = 0
-    currentWrapper++
-}
+        .addClass('wrapp');
+
+    count = 0 ;
+    currentWrapper++ ;
+    
+};
 
 const createNumber = () => {
-
+    
     $(`<p> ${displayTime} </p>`)
-        .appendTo(`.wrapp:nth-child(${currentWrapper + 1})`)
+        .appendTo(`.wrapp:nth-child(${currentWrapper+1})`)
         .addClass('time')
         .css({opacity: opacity/100});
+
+};
+
+const raf = () => {
+
+    window.scrollTo(0, document.body.scrollHeight)
+    displayTime < 2001 && window.requestAnimationFrame(raf)
+    window.cancelAnimationFrame(raf) 
+    
 }
-
-
 
 $(document).ready(() => {
     
     const intervalNumber = setInterval(()=>{
 
         opacity++;
-        time++;
+        count++;
         displayTime++;
 
-        if (opacity > 95)
-            {opacity = 10};
-
-        time === resetTime && createWrapp()
+        opacity > 95 ? opacity = 10 : ''
+        
         createNumber()
 
-        if(displayTime>5000) {
-            window.clearInterval(intervalNumber)
-        }
-    
+        count === resetCount && createWrapp()
+        
+        displayTime > 2798 && window.clearInterval(intervalNumber)
 
     }, intervalTimer);
 
-   
-    // const bottomScroller = setInterval(window.scrollTo(0, document.body.scrollHeight), (intervalTimer*resetTime)+1)
-
+    raf()
 
 }) 
