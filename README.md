@@ -4,7 +4,7 @@
 
 ![RomanOpalka](https://user-images.githubusercontent.com/98763680/151834927-8d6aca23-6f77-422b-bc94-460bf7c10dee.png)
 
-###[Demo](https://lab-duplicate-opalka-work.herokuapp.com/) 
+[Demo](https://lab-duplicate-opalka-work.herokuapp.com/) 
 
 ## What this script does ?
    - Every 10 ms it display a number then increment it.
