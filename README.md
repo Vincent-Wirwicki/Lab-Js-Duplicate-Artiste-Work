@@ -3,8 +3,8 @@
 ## Small script inspired by [Roman Opalka](https://fr.wikipedia.org/wiki/Roman_Opa%C5%82ka) work.
 
 ## Who was Opolka ?
-   He was french/polish artist obsess with time. 
-   In his series of 233 paintings called Details, he wrote down number on canvas.
+   He was french/polish artist obsess with time.   
+   In his series of 233 paintings called Details, he wrote down number on canvas.  
    My script tries to reproduce this process.
 
 ![RomanOpalka](https://user-images.githubusercontent.com/98763680/151834927-8d6aca23-6f77-422b-bc94-460bf7c10dee.png)
